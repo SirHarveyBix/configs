@@ -31,10 +31,11 @@ fi
 RPS1+=" ${FG[237]}%n@%m%{$reset_color%}"
 
 # git settings
-ZSH_THEME_GIT_PROMPT_PREFIX=" ${FG[075]}(${FG[078]}"
+ZSH_THEME_GIT_PROMPT_PREFIX=" %{$reset_color%}on %{$fg[magenta]%}\uE0A0 ${FG[075]}(${FG[078]}"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 ZSH_THEME_GIT_PROMPT_DIRTY="${FG[214]} ✗%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="${FG[075]})%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[green]%}?"
 
 # hg settings
 ZSH_THEME_HG_PROMPT_PREFIX=" ${FG[075]}(${FG[078]}"
