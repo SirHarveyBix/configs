@@ -79,19 +79,6 @@ module.exports = {
         // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
         // if left empty, your system's login shell will be used by default
         //
-        // Windows
-        // - Make sure to use a full path if the binary name doesn't work
-        // - Remove `--login` in shellArgs
-        //
-        // Windows Subsystem for Linux (WSL) - previously Bash on Windows
-        // - Example: `C:\\Windows\\System32\\wsl.exe`
-        //
-        // Git-bash on Windows
-        // - Example: `C:\\Program Files\\Git\\bin\\bash.exe`
-        //
-        // PowerShell on Windows
-        // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-        //
         // Cygwin
         // - Example: `C:\\cygwin64\\bin\\bash.exe`
         shell: '',
@@ -134,6 +121,15 @@ module.exports = {
     //   `hyperpower`
     //   `@company/project`
     //   `project#1.0.1`
+    hyperTabs: {
+        trafficButtons: true,
+        border: true,
+        tabIcons: true,
+        tabIconsColored: true,
+        activityColor: 'salmon',
+        closeAlign: 'right',
+        activityPulse: true,
+    },
     plugins: [
         "hyper-search",
         'hyper-dracula',
