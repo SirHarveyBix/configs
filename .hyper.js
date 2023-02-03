@@ -133,6 +133,7 @@ module.exports = {
         // https://github.com/henrikruscon/hyper-tabs-enhanced
     ],
     hyperline: {
+        // https://github.com/Hyperline/hyperline/blob/master/src/lib/plugins/index.js
         plugins: [
             "cpu",
             "memory",
