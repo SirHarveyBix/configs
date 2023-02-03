@@ -9,6 +9,8 @@ cd fonts
 // clean-up a bit
 cd .. && rm -rf fonts
 ```
+copier le theme af-magic-custom.zsh-theme dans .oh-my-zsh/themes/
+
 
 Plugins oh-my-zsh : 
 ```
