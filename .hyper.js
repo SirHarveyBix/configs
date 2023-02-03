@@ -121,6 +121,25 @@ module.exports = {
     //   `hyperpower`
     //   `@company/project`
     //   `project#1.0.1`
+    plugins: [
+        "hyper-search",
+        'hyper-dracula',
+        'hyper-search',
+        'hyper-pane',
+        'hypercwd',
+        'hyperline',
+        // 'hyper-active-tab',
+        'hyper-tabs-enhanced'
+        // https://github.com/henrikruscon/hyper-tabs-enhanced
+    ],
+    hyperline: {
+        plugins: [
+            "cpu",
+            "memory",
+            "network",
+            "battery"
+        ]
+    },
     hyperTabs: {
         trafficButtons: true,
         border: true,
@@ -130,16 +149,6 @@ module.exports = {
         closeAlign: 'right',
         activityPulse: true,
     },
-    plugins: [
-        "hyper-search",
-        'hyper-dracula',
-        'hyper-search',
-        'hyper-pane',
-        'hypercwd',
-        // 'hyper-active-tab',
-        'hyper-tabs-enhanced'
-        // https://github.com/henrikruscon/hyper-tabs-enhanced
-    ],
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
     // to load it and avoid it being `npm install`ed
