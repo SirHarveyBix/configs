@@ -114,6 +114,43 @@ module.exports = {
         // set to true to enable screen reading apps (like NVDA) to read the contents of the terminal
         screenReaderMode: false,
         // for advanced config flags please refer to https://hyper.is/#cfg
+        plugins: [
+            "hyper-search",
+            'hyper-dracula',
+            'hyper-search',
+            'hyper-pane',
+            'hypercwd',
+            'hyperline',
+            // 'hyper-active-tab',
+            'hyper-tabs-enhanced'
+            // https://github.com/henrikruscon/hyper-tabs-enhanced
+        ],
+        hyperline: {
+            // https://github.com/Hyperline/hyperline/blob/master/src/lib/plugins/index.js
+            plugins: [
+                "cpu",
+                "memory",
+                "network",
+                "battery"
+            ]
+        },
+        hyperTabs: {
+            trafficButtons: true,
+            border: true,
+            tabIcons: true,
+            tabIconsColored: true,
+            activityColor: 'salmon',
+            closeAlign: 'right',
+            activityPulse: true,
+        },
+        // in development, you can create a directory under
+        // `~/.hyper_plugins/local/` and include it here
+        // to load it and avoid it being `npm install`ed
+        localPlugins: [],
+        keymaps: {
+            // Example
+            // 'window:devtools': 'cmd+alt+o',
+        },
     },
     // a list of plugins to fetch and install from npm
     // format: [@org/]project[#version]
@@ -121,42 +158,6 @@ module.exports = {
     //   `hyperpower`
     //   `@company/project`
     //   `project#1.0.1`
-    plugins: [
-        "hyper-search",
-        'hyper-dracula',
-        'hyper-search',
-        'hyper-pane',
-        'hypercwd',
-        'hyperline',
-        // 'hyper-active-tab',
-        'hyper-tabs-enhanced'
-        // https://github.com/henrikruscon/hyper-tabs-enhanced
-    ],
-    hyperline: {
-        // https://github.com/Hyperline/hyperline/blob/master/src/lib/plugins/index.js
-        plugins: [
-            "cpu",
-            "memory",
-            "network",
-            "battery"
-        ]
-    },
-    hyperTabs: {
-        trafficButtons: true,
-        border: true,
-        tabIcons: true,
-        tabIconsColored: true,
-        activityColor: 'salmon',
-        closeAlign: 'right',
-        activityPulse: true,
-    },
-    // in development, you can create a directory under
-    // `~/.hyper_plugins/local/` and include it here
-    // to load it and avoid it being `npm install`ed
-    localPlugins: [],
-    keymaps: {
-        // Example
-        // 'window:devtools': 'cmd+alt+o',
-    },
+
 };
 //# sourceMappingURL=config-default.js.map
